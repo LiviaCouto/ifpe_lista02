@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001 - Exercício</title>
+    <style>
+        body {
+            background-color: rgb(2, 51, 21);
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <br>
+    <h1>INSTITUTO FEDERAL DE PERNAMBUCO <br>
+        Aluna: Lívia Couto <br>
+        Prof.: Carlos Rezende <br>
+        Curso: IPI - 1º Período (Noite) <br>
+        Disciplina: Lógica de Programação 💡 <br><br>
+    </h1>
+    
+    <h2> Lista 02 - Exercício 01 =) </h2><br>
+
+    <h2>"Cada degrau de uma escada tem uma altura X. <br>
+        Faça um algoritmo que receba essa altura e a altura
+        que o usuário deseja alcançar subindo a escada.<br>Calcule e mostre quantos degraus o usuário deverá
+        subir para atingir seu objetivo."<br><br>
+        
+        Atividade concluída! ✔🙌🏻</h2>
+    
+    
+    <script>
+        alert("Exercício 01 - Tamanhos e alturas!")
+        var alturaDegrau = prompt("Quantos centímetros tem a altura do degrau? ");
+        alturaDegrau = parseInt(alturaDegrau);
+        var alturaEscada = prompt("Que altura você deseja alcançar subindo a escada (em metros)? ");
+        alturaEscada = parseInt(alturaEscada);
+        var resultado = (alturaEscada * 100) / alturaDegrau;
+        
+        resultado = Math.round(resultado);
+        
+        prompt("Para alcançar o objetivo, você deverá subir " + resultado + " degraus!");
+        
+       </script>
+    
+
+</body>
+</html>

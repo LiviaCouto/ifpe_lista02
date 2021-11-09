@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>011 - Exercício</title>
+    <style>
+        body {
+            background-color: rgb(2, 51, 21);
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <br>
+    <h1>INSTITUTO FEDERAL DE PERNAMBUCO <br>
+        Aluna: Lívia Couto <br>
+        Prof.: Carlos Rezende <br>
+        Curso: IPI - 1º Período (Noite) <br>
+        Disciplina: Lógica de Programação 💡 <br><br>
+    </h1>
+    
+    <h2> Lista 02 - Exercício 11 (DESAFIO) =) </h2>
+
+    <h2>"Uma empresa concederá um aumento de salário aos seus funcionários, <br> variável de acordo com o
+        cargo, conforme a tabela abaixo.<br> Faça um algoritmo que leia o código do cargo e o salário de um
+        funcionário.<br> Por fim, de acordo com o percentual de aumento para aquele código, calcule o novo
+        salário.<br> Se o cargo do funcionário não estiver na tabela, ele deverá, então, receber 50% de aumento.<br>
+        Mostre o salário antigo, o novo salário e a diferença.<br><br>
+
+        Código --- Cargo --- Percentual<br><br>
+        101 -- Gerente -- 10%<br>
+        102 -- Engenheiro -- 20%<br>
+        103 -- Técnico -- 30%"<br><br>
+        
+        Atividade concluída! ✔🙌🏻</h2>
+    
+    
+    <script>
+        alert("Desafio 11 - Salários, aumentos e diferenças.");
+        var nome = prompt("Informe o seu nome e sobrenome: ")
+        var codigo = prompt("Para saber o valor do aumento, informe o código do seu cargo (ex.: 108): ");
+        codigo = parseInt(codigo);
+        var salario = prompt("Informe também o valor do seu salário atual (ex.: 2500): ");
+        salario = parseInt(salario);
+        salarioConvertido = salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+        var aumento10 = ((salario * 10)/100);
+        var dif101 = aumento10.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        var aumento101 = salario + aumento10;
+        var aumentoGerente = aumento101.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        
+        var aumento20 = ((salario * 20)/100);
+        var dif02 = aumento20.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        var aumento102 = salario + aumento20;
+        var aumentoEngenheiro = aumento102.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+        var aumento30 = ((salario * 30)/100);
+        var dif03 = aumento30.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        var aumento103 = salario + aumento30;
+        var aumentoTecnico = aumento103.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+        var aumento50 = ((salario * 50)/100);
+        var dif50 = aumento50.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        var aumentoGeral = salario + aumento50;
+        var aumentoFuncionario = aumentoGeral.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+
+        if(codigo == 101){
+            alert("Olá, " + nome + ", você é Gerente e recebeu um aumento de 10% no salário atual, passando de " + salarioConvertido + " para " + aumentoGerente + ", com um acréscimo de " + dif101 + " no seus ganhos mensais.")
+        }else if(codigo == 102){
+            alert("Olá, " + nome + ", você é Engenheiro(a) e recebeu um aumento de 20% no salário atual, passando de " + salarioConvertido + " para " + aumentoEngenheiro + ", com um acréscimo de " + dif02 + " no seus ganhos mensais.")
+        }else if(codigo == 103){
+            alert("Olá, " + nome + ", você é Técnico(a) e recebeu um aumento de 30% no salário atual, passando de " + salarioConvertido + " para " + aumentoTecnico + ", com um acréscimo de " + dif03 + " no seus ganhos mensais.")
+        }else if(codigo != 101 && codigo != 102 && codigo != 103){
+            alert("Olá, " + nome + ", você é Funcionário(a) da empresa e recebeu um aumento de 50% no salário atual, passando de " + salarioConvertido + " para " + aumentoFuncionario + ", com um acréscimo de " + dif50 + " no seus ganhos mensais.")
+        }
+        
+
+       </script>
+
+</body>
+</html>

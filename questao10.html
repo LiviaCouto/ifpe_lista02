@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>010 - Exercício</title>
+    <style>
+        body {
+            background-color: rgb(2, 51, 21);
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <br>
+    <h1>INSTITUTO FEDERAL DE PERNAMBUCO <br>
+        Aluna: Lívia Couto <br>
+        Prof.: Carlos Rezende <br>
+        Curso: IPI - 1º Período (Noite) <br>
+        Disciplina: Lógica de Programação 💡 <br><br>
+    </h1>
+    
+    <h2> Lista 02 - Exercício 10 =) </h2><br>
+
+    <h2>"O DETRAN cobra uma taxa de 1% para carros fabricados antes de 1990 e uma taxa de 1.5% para os
+        fabricados de 1990 em diante, a taxa incide sobre o valor de tabela do carro. <br>Faça um algoritmo que
+        leia o ano e o preço do carro e a seguir calcule e imprima o imposto a ser pago."<br><br>
+        
+        Atividade concluída! ✔🙌🏻</h2>
+    
+    
+    <script>
+        alert("Exercício 10 - Taxa do DETRAN.");
+        var modelo = prompt("Insira o modelo do carro (ex.: Fiesta):  ");
+        var ano = prompt("Insira o ano (ex.: 1992): ");
+        ano = parseFloat(ano);
+        var valor = prompt("Insira o valor do carro (ex.: 50000): ");
+        valor = parseInt(valor);
+        var valorFinal = valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+        var taxa1 = (valor * 1/100);
+        var conversao1 = taxa1.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        var taxa2 = (valor * 1.5/100);
+        var conversao2 = taxa2.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+        if(ano <= 1990){
+            alert("O imposto cobrado sobre o carro " + modelo + ", ano " + ano + ", valor " + valorFinal + ", será de " + conversao1 + ", o equivalente a 1% sobre o valor de tabela do veículo." )
+        }else if(ano > 1990){
+            alert("O imposto cobrado sobre o carro " + modelo + ", ano " + ano + ", valor " + valorFinal + ", será de " + conversao2 + ", o equivalente a 1,5% sobre o valor de tabela do veículo.")
+        }
+
+       </script>
+
+</body>
+</html>

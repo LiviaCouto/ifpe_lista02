@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>008 - Exercício</title>
+    <style>
+        body {
+            background-color: rgb(2, 51, 21);
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <br>
+    <h1>INSTITUTO FEDERAL DE PERNAMBUCO <br>
+        Aluna: Lívia Couto <br>
+        Prof.: Carlos Rezende <br>
+        Curso: IPI - 1º Período (Noite) <br>
+        Disciplina: Lógica de Programação 💡 <br><br>
+    </h1>
+    
+    <h2> Lista 02 - Exercício 08 =) </h2><br>
+
+    <h2>"Elabore um algoritmo a ler 4 notas de um aluno (de 1 a 10). <br> Após calcular a média das notas,
+        apresentar a mensagem “Aprovada” se o aluno tiver obtido média maior ou igual a 6, caso contrário,
+        apresentar “Reprovado”."<br><br>
+        
+        Atividade concluída! ✔🙌🏻</h2>
+    
+    
+    <script>
+        alert("Exercício 08 - Média das Notas.");
+        var nota1 = prompt("Insira aqui a primeira nota: ");
+        var nota2 = prompt("Insira aqui a segunda nota: ");
+        var nota3 = prompt("Insira aqui a terceira nota: ");
+        var nota4 = prompt("Insira aqui a quarta nota: ");
+        nota1 = parseInt(nota1);
+        nota2 = parseInt(nota2);
+        nota3 = parseInt(nota3);
+        nota4 = parseInt(nota4);
+
+        var res = ((nota1 + nota2 + nota3 + nota4) / 4).toFixed(1);
+        
+
+        if(res >= 6){
+            alert("Parabéns! Sua média foi " + res + " e você está APROVADO(A)!");
+        }else{
+            alert("Que pena... Sua média foi " + res + " e você está REPROVADO(A).");
+        }
+
+       </script>
+
+</body>
+</html>

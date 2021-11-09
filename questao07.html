@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>007 - Exercício</title>
+    <style>
+        body {
+            background-color: rgb(2, 51, 21);
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <br>
+    <h1>INSTITUTO FEDERAL DE PERNAMBUCO <br>
+        Aluna: Lívia Couto <br>
+        Prof.: Carlos Rezende <br>
+        Curso: IPI - 1º Período (Noite) <br>
+        Disciplina: Lógica de Programação 💡 <br><br>
+    </h1>
+    
+    <h2> Lista 02 - Exercício 07 =) </h2><br>
+
+    <h2>"Faça um algoritmo que receba o peso e a altura de uma pessoa e calcule o índice de massa corpórea.
+        Ele mede a relação entre peso e altura (peso em Kg, dividido pelo quadrado da altura em metros)."<br><br>
+        
+        Atividade concluída! ✔🙌🏻</h2>
+    
+    
+    <script>
+        alert("Exercício 07 - Calculando o IMC.");
+        var nome = prompt("Para começar, insira o seu nome: ");
+        var peso = prompt("Informe o seu peso: (Exemplo: 70) ");
+        peso = parseFloat(peso);
+        var altura = prompt("Informe a sua altura: (Exemplo: 1.70): ");
+        altura = parseFloat(altura);
+
+        var imc = (peso/(altura*altura)).toFixed(1);
+        
+        if (imc < 18.5){
+            alert(nome + ", seu IMC é " + imc + " e você está abaixo do peso.");
+        }else if (imc < 25){
+            alert(nome + ", seu IMC é " + imc + " e você está com peso ideal. Parabéns!");
+        }else if (imc < 30){
+            alert(nome + ", seu IMC é " + imc + " e você está levemente acima do peso.");
+        }else if (imc < 35){
+            alert(nome + ", seu IMC é " + imc + " e você está com obesidade grau I.");
+        }else if(imc < 40){
+            alert(nome + ", seu IMC é " + imc + " e você está com obesidade grau II.");
+        }else{
+            alert(nome + ", seu IMC é " + imc + " e você está com obesidade grau III. Cuidado!");
+        }
+
+       </script>
+
+</body>
+</html>
