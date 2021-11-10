@@ -4,5 +4,5 @@
 * HTML / CSS / JS - Estrutura Condicional (if/else).
   
 * Aluna: Lívia Couto
-* Professor: Carlos Rezende
+* Professor: Carlos Rezende Brasil Neto
   
